@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Age In Minutes App</string>
+    <string-array name="settings">
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Years</item>
+    </string-array>
+</resources>
