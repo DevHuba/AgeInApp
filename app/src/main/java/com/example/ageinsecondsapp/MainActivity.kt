@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.*
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.math.floor
 
 
 class MainActivity : AppCompatActivity() {
@@ -131,10 +132,10 @@ class MainActivity : AppCompatActivity() {
                                 tvResults?.text = differenceDays.toString()
                             }
                             "Months" -> {
-                                tvResults?.text = differenceMonths.toString()
+                                tvResults?.text = (floor(differenceMonths * 100.0) / 100.0).toString()
                             }
                             "Years" -> {
-                                tvResults?.text = differenceYears.toString()
+                                tvResults?.text = (floor(differenceYears * 100.0) / 100.0).toString()
                             }
                             else -> {
                                 Toast.makeText(this, "Error in date picker", Toast.LENGTH_SHORT)
