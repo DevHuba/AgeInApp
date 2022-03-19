@@ -94,6 +94,8 @@ class MainActivity : AppCompatActivity() {
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
                 val theDate = sdf.parse(selectedDate)
 
+
+
                 //Check for not null of parsed date
                 theDate?.let {
                     val selectedMinutes = theDate.time / 60000
@@ -119,6 +121,8 @@ class MainActivity : AppCompatActivity() {
                         val differenceDays = currentDays - selectedDays
                         val differenceMonths = currentMonths - selectedMonths
                         val differenceYears = currentYear - selectedYears
+
+
 
                         //Dependent on what setting selected change displayed result
                         when (selectedSetting) {
